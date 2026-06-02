@@ -1319,14 +1319,7 @@ ul, ol { list-style: none; }
 .footer__bottom p { font-size: 0.75rem; color: rgba(250, 248, 245, 0.3); }
 .footer__order { font-size: 0.7rem !important; color: rgba(250, 248, 245, 0.2) !important; }
 
-/* ============================================
-   ANIMATIONS — hidden only when GSAP is ready
-   ============================================ */
-body.gsap-ready [data-animate] { opacity: 0; }
-body.gsap-ready [data-animate="fade-up"] { transform: translateY(40px); }
-body.gsap-ready [data-animate="fade-right"] { transform: translateX(-40px); }
-body.gsap-ready [data-animate="fade-left"] { transform: translateX(40px); }
-body.gsap-ready [data-animate="counter"] { opacity: 1; }
+/* Animations are handled entirely by GSAP in main.js */
 
 /* ============================================
    RESPONSIVE
