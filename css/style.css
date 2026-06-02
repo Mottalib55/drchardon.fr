@@ -1320,13 +1320,13 @@ ul, ol { list-style: none; }
 .footer__order { font-size: 0.7rem !important; color: rgba(250, 248, 245, 0.2) !important; }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS — hidden only when GSAP is ready
    ============================================ */
-[data-animate] { opacity: 0; }
-[data-animate="fade-up"] { transform: translateY(40px); }
-[data-animate="fade-right"] { transform: translateX(-40px); }
-[data-animate="fade-left"] { transform: translateX(40px); }
-[data-animate="counter"] { opacity: 1; }
+body.gsap-ready [data-animate] { opacity: 0; }
+body.gsap-ready [data-animate="fade-up"] { transform: translateY(40px); }
+body.gsap-ready [data-animate="fade-right"] { transform: translateX(-40px); }
+body.gsap-ready [data-animate="fade-left"] { transform: translateX(40px); }
+body.gsap-ready [data-animate="counter"] { opacity: 1; }
 
 /* ============================================
    RESPONSIVE

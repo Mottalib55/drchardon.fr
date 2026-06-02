@@ -4,28 +4,46 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Wait for GSAP to load
-  const initApp = () => {
+  // Always init non-GSAP features immediately
+  initNavbar();
+  initMobileMenu();
+  initBeforeAfterSliders();
+  initTestimonialCarousel();
+  initContactForm();
+  initSmoothScrollFallback();
+
+  // Wait for GSAP to load, then activate animations
+  const initGSAP = () => {
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-      setTimeout(initApp, 100);
+      // After 3s, give up on GSAP — site stays visible without animations
       return;
     }
 
     gsap.registerPlugin(ScrollTrigger);
 
+    // Mark body so CSS hides elements for animation
+    document.body.classList.add('gsap-ready');
+
     initPreloader();
-    initNavbar();
-    initMobileMenu();
     initScrollAnimations();
     initCounters();
-    initBeforeAfterSliders();
-    initTestimonialCarousel();
-    initContactForm();
     initSmoothScroll();
     initParallax();
   };
 
-  initApp();
+  // Try loading GSAP with retries
+  let attempts = 0;
+  const tryGSAP = () => {
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      initGSAP();
+    } else if (attempts < 30) {
+      attempts++;
+      setTimeout(tryGSAP, 100);
+    }
+    // After 30 attempts (3s), site works without animations
+  };
+
+  tryGSAP();
 });
 
 /* ============================================
@@ -37,28 +55,31 @@ function initPreloader() {
 
   document.body.classList.add('loading');
 
-  window.addEventListener('load', () => {
-    gsap.to(preloader, {
-      opacity: 0,
-      duration: 0.6,
-      delay: 0.8,
-      ease: 'power2.inOut',
-      onComplete: () => {
-        preloader.classList.add('hidden');
-        document.body.classList.remove('loading');
-        animateHero();
-      }
-    });
-  });
-
-  // Fallback: hide preloader after 3s max
-  setTimeout(() => {
-    if (!preloader.classList.contains('hidden')) {
+  const hidePreloader = () => {
+    if (preloader.classList.contains('hidden')) return;
+    if (typeof gsap !== 'undefined') {
+      gsap.to(preloader, {
+        opacity: 0, duration: 0.6, delay: 0.3, ease: 'power2.inOut',
+        onComplete: () => {
+          preloader.classList.add('hidden');
+          document.body.classList.remove('loading');
+          animateHero();
+        }
+      });
+    } else {
       preloader.classList.add('hidden');
       document.body.classList.remove('loading');
-      animateHero();
     }
-  }, 3000);
+  };
+
+  if (document.readyState === 'complete') {
+    hidePreloader();
+  } else {
+    window.addEventListener('load', hidePreloader);
+  }
+
+  // Fallback: hide preloader after 2s max
+  setTimeout(hidePreloader, 2000);
 }
 
 /* ============================================
@@ -66,7 +87,7 @@ function initPreloader() {
    ============================================ */
 function animateHero() {
   const hero = document.getElementById('hero');
-  if (!hero) return;
+  if (!hero || typeof gsap === 'undefined') return;
 
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
@@ -468,23 +489,34 @@ function initContactForm() {
     }, 3000);
   });
 
-  // Input focus animations
-  const inputs = form.querySelectorAll('input, select, textarea');
-  inputs.forEach(input => {
-    input.addEventListener('focus', () => {
-      gsap.to(input, {
-        scale: 1.01,
-        duration: 0.2,
-        ease: 'power2.out'
+  // Input focus animations (only if GSAP loaded)
+  if (typeof gsap !== 'undefined') {
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        gsap.to(input, { scale: 1.01, duration: 0.2, ease: 'power2.out' });
+      });
+      input.addEventListener('blur', () => {
+        gsap.to(input, { scale: 1, duration: 0.2, ease: 'power2.out' });
       });
     });
+  }
+}
 
-    input.addEventListener('blur', () => {
-      gsap.to(input, {
-        scale: 1,
-        duration: 0.2,
-        ease: 'power2.out'
-      });
+/* ============================================
+   SMOOTH SCROLL FALLBACK (no GSAP needed)
+   ============================================ */
+function initSmoothScrollFallback() {
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (!target) return;
+      e.preventDefault();
+      const navbarHeight = document.getElementById('navbar')?.offsetHeight || 0;
+      const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 }
