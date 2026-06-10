@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthodontie Colombes — Exercice Limité à l'Orthodontie</title>
+  <meta name="description" content="Cabinet d'orthodontie à Colombes (92). Aligneurs invisibles, multibagues, orthodontie enfant dès 6 ans, adolescent et adulte. Prenez rendez-vous en ligne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       DESIGN TOKENS
+       ============================================ */
+    :root {
+      --accent: #ff5149;
+      --accent-dark: #e0433c;
+      --black: #0a0a0a;
+      --dark: #1a1a1a;
+      --gray-900: #222;
+      --gray-700: #555;
+      --gray-500: #888;
+      --gray-300: #ccc;
+      --gray-100: #f5f5f5;
+      --white: #ffffff;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --max-w: 1300px;
+      --ease: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* ============================================
+       RESET
+       ============================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      color: var(--gray-900);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    ul { list-style: none; }
+
+    /* ============================================
+       NAVBAR
+       ============================================ */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.2rem 0;
+      transition: all 0.4s var(--ease);
+    }
+    .nav--scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+      padding: 0.8rem 0;
+    }
+    .nav__inner {
+      max-width: var(--max-w);
+      margin: 0 auto; padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav__logo {
+      font-size: 1.4rem; font-weight: 800;
+      color: var(--white); letter-spacing: -0.02em;
+      transition: color 0.3s;
+    }
+    .nav--scrolled .nav__logo { color: var(--black); }
+    .nav__logo span { color: var(--accent); }
+    .nav__links {
+      display: flex; align-items: center; gap: 2rem;
+    }
+    .nav__link {
+      font-size: 0.85rem; font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.02em;
+      transition: color 0.3s; position: relative;
+    }
+    .nav--scrolled .nav__link { color: var(--gray-700); }
+    .nav__link:hover { color: var(--accent); }
+    .nav__link::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; background: var(--accent);
+      transition: width 0.3s var(--ease);
+    }
+    .nav__link:hover::after { width: 100%; }
+    .nav__phone {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: var(--white);
+      padding: 0.6rem 1.4rem; border-radius: 50px;
+      font-size: 0.8rem; font-weight: 600;
+      transition: all 0.3s var(--ease);
+    }
+    .nav__phone:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .nav__phone svg { width: 16px; height: 16px; }
+    .nav__burger {
+      display: none; flex-direction: column; gap: 5px;
+      width: 26px; z-index: 10;
+    }
+    .nav__burger span {
+      display: block; width: 100%; height: 2px;
+      background: var(--white); transition: all 0.3s var(--ease);
+    }
+    .nav--scrolled .nav__burger span { background: var(--black); }
+
+    /* ============================================
+       HERO
+       ============================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--black); overflow: hidden;
+    }
+    .hero__bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%),
+        url('https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+    }
+    .hero__content {
+      position: relative; z-index: 1;
+      text-align: center; padding: 0 2rem; max-width: 900px;
+    }
+    .hero__label {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.8s var(--ease) 0.2s forwards;
+    }
+    .hero__title {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 900; color: var(--white);
+      line-height: 1.05; letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.8s var(--ease) 0.4s forwards;
+    }
+    .hero__title em { font-style: normal; font-weight: 300; color: rgba(255,255,255,0.7); }
+    .hero__sub {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: rgba(255,255,255,0.7); font-weight: 300;
+      line-height: 1.8; max-width: 620px; margin: 0 auto 2.5rem;
+      opacity: 0; animation: fadeUp 0.8s var(--ease) 0.6s forwards;
+    }
+    .hero__cta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--accent); color: var(--white);
+      padding: 1rem 2.5rem; border-radius: 50px;
+      font-size: 0.9rem; font-weight: 600; letter-spacing: 0.04em;
+      transition: all 0.3s var(--ease);
+      opacity: 0; animation: fadeUp 0.8s var(--ease) 0.8s forwards;
+    }
+    .hero__cta:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(255,81,73,0.3); }
+    .hero__scroll {
+      position: absolute; bottom: 2rem; left: 50%;
+      transform: translateX(-50%); z-index: 1;
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    }
+    .hero__scroll span {
+      font-size: 0.65rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+    }
+    .hero__scroll-line {
+      width: 1px; height: 40px; background: rgba(255,255,255,0.15);
+      position: relative; overflow: hidden;
+    }
+    .hero__scroll-line::after {
+      content: ''; position: absolute; top: -100%; left: 0;
+      width: 100%; height: 100%; background: var(--accent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scrollPulse {
+      0%   { top: -100%; }
+      50%  { top: 100%; }
+      100% { top: 100%; }
+    }
+
+    /* ============================================
+       DISTANCES
+       ============================================ */
+    .distances { padding: 4rem 0; background: var(--white); }
+    .distances__inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 2rem;
+      display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+    }
+    .distance-card {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.25rem 1.75rem; background: var(--gray-100);
+      border-radius: 16px; transition: all 0.3s var(--ease);
+    }
+    .distance-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.06); }
+    .distance-card__icon {
+      width: 44px; height: 44px; background: var(--accent);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: var(--white); flex-shrink: 0;
+    }
+    .distance-card__time { font-size: 1.5rem; font-weight: 800; color: var(--black); line-height: 1; }
+    .distance-card__time small { font-size: 0.7rem; font-weight: 500; color: var(--gray-500); }
+    .distance-card__place { font-size: 0.82rem; color: var(--gray-700); font-weight: 500; }
+
+    /* ============================================
+       SECTIONS SHARED
+       ============================================ */
+    .section { padding: clamp(4rem, 10vw, 7rem) 0; }
+    .section__inner { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+    .section__label {
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .section__title {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--black); letter-spacing: -0.02em; margin-bottom: 1rem;
+    }
+    .section__title em { font-style: normal; font-weight: 300; color: var(--gray-500); }
+    .section__subtitle {
+      font-size: 1.05rem; color: var(--gray-700);
+      line-height: 1.7; max-width: 600px;
+    }
+    .section__header { margin-bottom: 3.5rem; }
+    .section__header--center { text-align: center; }
+    .section__header--center .section__subtitle { margin: 0 auto; }
+
+    /* ============================================
+       TREATMENTS
+       ============================================ */
+    .treatments { background: var(--white); }
+    .treatments__grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem;
+    }
+    .treat-card {
+      background: var(--gray-100); border-radius: 16px;
+      padding: 2rem 1.5rem; text-align: center;
+      transition: all 0.4s var(--ease);
+      position: relative; overflow: hidden; cursor: pointer;
+    }
+    .treat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s var(--ease);
+    }
+    .treat-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+    .treat-card:hover::before { transform: scaleX(1); }
+    .treat-card__icon {
+      width: 56px; height: 56px; margin: 0 auto 1.25rem;
+      background: var(--white); border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); transition: all 0.3s var(--ease);
+    }
+    .treat-card:hover .treat-card__icon { background: var(--accent); color: var(--white); }
+    .treat-card__title { font-size: 0.95rem; font-weight: 700; color: var(--black); line-height: 1.3; }
+
+    /* ============================================
+       TAGLINE
+       ============================================ */
+    .tagline {
+      background: var(--black);
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      position: relative;
+    }
+    .tagline__wave {
+      position: absolute; top: -1px; left: 0; right: 0;
+      overflow: hidden; line-height: 0;
+    }
+    .tagline__wave svg { display: block; width: 100%; height: 60px; }
+    .tagline__inner { max-width: 900px; margin: 0 auto; padding: 0 2rem; text-align: center; }
+    .tagline__text {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 300; color: var(--white); line-height: 1.6;
+    }
+    .tagline__text strong { font-weight: 700; color: var(--accent); }
+
+    /* ============================================
+       ABOUT (Dr Chardon)
+       ============================================ */
+    .about { background: var(--gray-100); }
+    .about__grid {
+      display: grid; grid-template-columns: 380px 1fr;
+      gap: clamp(2.5rem, 5vw, 5rem); align-items: center;
+    }
+    .about__photo {
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; object-position: center top;
+      border-radius: 20px;
+    }
+    .about__content {}
+    .about__text { margin-bottom: 2rem; }
+    .about__text p {
+      font-size: 0.95rem; color: var(--gray-700);
+      line-height: 1.8; margin-bottom: 0.75rem;
+    }
+    .about__text strong { color: var(--gray-900); font-weight: 600; }
+    .about__quals { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .about__qual {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      background: var(--white); border-radius: 14px;
+      padding: 1.25rem; transition: all 0.3s var(--ease);
+    }
+    .about__qual:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+    .about__qual-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(255,81,73,0.08); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+    .about__qual h4 { font-size: 0.85rem; font-weight: 700; color: var(--black); margin-bottom: 0.15rem; }
+    .about__qual p { font-size: 0.78rem; color: var(--gray-500); line-height: 1.4; }
+
+    /* ============================================
+       RESULTS — Interactive Before/After Slider
+       ============================================ */
+    .results { background: var(--white); }
+    .results__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+    }
+    .ba-slider { position: relative; }
+    .ba-slider__wrapper {
+      position: relative; aspect-ratio: 4/3;
+      border-radius: 16px; overflow: hidden;
+      cursor: ew-resize; user-select: none; -webkit-user-select: none;
+      background: var(--gray-100);
+    }
+    .ba-slider__before,
+    .ba-slider__after {
+      position: absolute; inset: 0;
+    }
+    .ba-slider__after { clip-path: inset(0 0 0 50%); }
+    .ba-slider__img {
+      width: 100%; height: 100%; display: flex;
+      align-items: center; justify-content: center;
+    }
+    .ba-slider__teeth { width: 80%; height: 60%; display: flex; align-items: center; justify-content: center; }
+    .ba-slider__teeth svg { width: 100%; height: 100%; }
+    .ba-slider__label {
+      position: absolute; bottom: 1rem;
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      padding: 0.3rem 0.8rem; border-radius: 100px;
+      background: rgba(10,10,10,0.6);
+      backdrop-filter: blur(4px);
+    }
+    .ba-slider__before .ba-slider__label { left: 1rem; }
+    .ba-slider__after .ba-slider__label { right: 1rem; }
+    .ba-slider__handle {
+      position: absolute; top: 0; bottom: 0; left: 50%;
+      width: 3px; transform: translateX(-50%);
+      z-index: 2; pointer-events: none;
+    }
+    .ba-slider__handle-line {
+      width: 100%; height: 100%;
+      background: var(--accent); opacity: 0.9;
+    }
+    .ba-slider__handle-circle {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--accent); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      pointer-events: auto;
+    }
+    .ba-slider__caption {
+      text-align: center; font-size: 0.82rem;
+      color: var(--gray-500); margin-top: 0.75rem;
+    }
+
+    /* ============================================
+       FAQ
+       ============================================ */
+    .faq { background: var(--gray-100); }
+    .faq__list { max-width: 800px; margin: 0 auto; }
+    .faq__item { border-bottom: 1px solid var(--gray-300); }
+    .faq__q {
+      display: flex; align-items: center; justify-content: space-between;
+      width: 100%; padding: 1.5rem 0;
+      font-size: 1rem; font-weight: 600;
+      color: var(--black); text-align: left;
+      transition: color 0.3s;
+    }
+    .faq__q:hover { color: var(--accent); }
+    .faq__icon { width: 28px; height: 28px; flex-shrink: 0; position: relative; }
+    .faq__icon::before, .faq__icon::after {
+      content: ''; position: absolute;
+      background: var(--gray-500); transition: all 0.35s var(--ease);
+    }
+    .faq__icon::before { width: 16px; height: 2px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .faq__icon::after { width: 2px; height: 16px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .faq__item.active .faq__icon::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+    .faq__item.active .faq__icon::before { background: var(--accent); }
+    .faq__a { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease), padding 0.45s var(--ease); }
+    .faq__item.active .faq__a { max-height: 300px; padding-bottom: 1.5rem; }
+    .faq__a p { font-size: 0.9rem; color: var(--gray-700); line-height: 1.8; }
+
+    /* ============================================
+       CONTACT
+       ============================================ */
+    .contact { background: var(--black); color: var(--white); position: relative; }
+    .contact__wave {
+      position: absolute; top: -1px; left: 0; right: 0;
+      overflow: hidden; line-height: 0;
+    }
+    .contact__wave svg { display: block; width: 100%; height: 60px; }
+    .contact__grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3rem;
+    }
+    .contact__col h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--white); }
+    .contact__item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem; }
+    .contact__item-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(255,255,255,0.08); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+    .contact__item p { font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
+    .contact__item a { color: rgba(255,255,255,0.7); transition: color 0.3s; }
+    .contact__item a:hover { color: var(--accent); }
+    .contact__item strong {
+      display: block; color: var(--white);
+      font-size: 0.8rem; font-weight: 600;
+      margin-bottom: 0.15rem; letter-spacing: 0.04em;
+    }
+    .contact__hours { width: 100%; border-collapse: collapse; }
+    .contact__hours td { font-size: 0.82rem; color: rgba(255,255,255,0.6); padding: 0.4rem 0; }
+    .contact__hours td:first-child { font-weight: 500; color: rgba(255,255,255,0.8); padding-right: 1.5rem; }
+    .contact__map { grid-column: 1 / -1; border-radius: 16px; overflow: hidden; margin-top: 1rem; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer { background: var(--dark); padding: 1.5rem 0; text-align: center; }
+    .footer p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 999px) {
+      .nav__links { display: none; }
+      .nav__burger { display: flex; }
+      .treatments__grid { grid-template-columns: repeat(3, 1fr); }
+      .about__grid { grid-template-columns: 1fr; }
+      .about__photo { max-width: 350px; margin: 0 auto; }
+      .results__grid { grid-template-columns: repeat(2, 1fr); }
+      .contact__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 690px) {
+      .treatments__grid { grid-template-columns: repeat(2, 1fr); }
+      .about__quals { grid-template-columns: 1fr; }
+      .results__grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+      .distances__inner { flex-direction: column; align-items: center; }
+      .contact__grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">Dr<span> Chardon</span></a>
+      <nav class="nav__links">
+        <a href="#about" class="nav__link">Dr Chardon</a>
+        <a href="#treatments" class="nav__link">Traitements</a>
+        <a href="#results" class="nav__link">Résultats</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="tel:+33145537812" class="nav__phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          01 45 53 78 12
+        </a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <span class="hero__label">Chirurgien-dentiste &middot; Orthodontie exclusive</span>
+      <h1 class="hero__title">Dr Sarah<br><em>Chardon</em></h1>
+      <p class="hero__sub">
+        Chirurgien-dentiste, pratique dédiée exclusivement à l'orthodontie.
+        Consultations sur rendez-vous au cabinet, quartier du Stade à Colombes.
+      </p>
+      <a href="#contact" class="hero__cta">Prendre rendez-vous</a>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DISTANCES
+       ============================================ -->
+  <section class="distances">
+    <div class="distances__inner">
+      <div class="distance-card">
+        <div class="distance-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="distance-card__time">3 <small>min</small></div>
+          <div class="distance-card__place">De Bois-Colombes</div>
+        </div>
+      </div>
+      <div class="distance-card">
+        <div class="distance-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="distance-card__time">5 <small>min</small></div>
+          <div class="distance-card__place">De La Garenne-Colombes</div>
+        </div>
+      </div>
+      <div class="distance-card">
+        <div class="distance-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="distance-card__time">5 <small>min</small></div>
+          <div class="distance-card__place">D'Asnières-sur-Seine</div>
+        </div>
+      </div>
+      <div class="distance-card">
+        <div class="distance-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="distance-card__time">8 <small>min</small></div>
+          <div class="distance-card__place">De Courbevoie</div>
+        </div>
+      </div>
+      <div class="distance-card">
+        <div class="distance-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="distance-card__time">10 <small>min</small></div>
+          <div class="distance-card__place">De Nanterre</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TREATMENTS
+       ============================================ -->
+  <section class="section treatments" id="treatments">
+    <div class="section__inner">
+      <div class="section__header section__header--center">
+        <p class="section__label">Traitements</p>
+        <h2 class="section__title">Des solutions adaptées <em>à chaque sourire</em></h2>
+        <p class="section__subtitle">Différentes techniques orthodontiques, adaptées selon l'indication clinique, l'âge et le mode de vie du patient.</p>
+      </div>
+      <div class="treatments__grid">
+        <div class="treat-card">
+          <div class="treat-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12c0-5 4-8 8-8s8 3 8 8c0 5-4 8-8 8s-8-3-8-8z" opacity="0.3"/><path d="M6 12c0-4 3-6 6-6s6 2 6 6-3 6-6 6-6-2-6-6z"/></svg>
+          </div>
+          <h3 class="treat-card__title">Aligneurs<br>invisibles</h3>
+        </div>
+        <div class="treat-card">
+          <div class="treat-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="5" height="8" rx="1.5"/><rect x="10" y="6" width="5" height="10" rx="1.5"/><rect x="14" y="8" width="5" height="8" rx="1.5"/><line x1="3" y1="12" x2="21" y2="12" opacity="0.4"/></svg>
+          </div>
+          <h3 class="treat-card__title">Bagues<br>céramiques</h3>
+        </div>
+        <div class="treat-card">
+          <div class="treat-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 3 3 4 3s3-1 4-3" stroke-dasharray="2 3"/></svg>
+          </div>
+          <h3 class="treat-card__title">Orthodontie<br>linguale</h3>
+        </div>
+        <div class="treat-card">
+          <div class="treat-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="10" r="6"/><path d="M9 9c0 0 1 2 3 2s3-2 3-2"/><circle cx="10" cy="8" r="1" fill="currentColor" opacity="0.4"/><circle cx="14" cy="8" r="1" fill="currentColor" opacity="0.4"/><path d="M7 18l5 3 5-3" opacity="0.4"/></svg>
+          </div>
+          <h3 class="treat-card__title">Orthodontie<br>enfant</h3>
+        </div>
+        <div class="treat-card">
+          <div class="treat-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6l4-2 4 2"/><path d="M8 6v14c0 2 2 4 4 4s4-2 4-4V6"/><path d="M10 12l2 2 2-2" opacity="0.4"/></svg>
+          </div>
+          <h3 class="treat-card__title">Orthodontie<br>adulte</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TAGLINE
+       ============================================ -->
+  <section class="tagline">
+    <div class="tagline__wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C480,60 960,60 1440,0 L1440,0 L0,0 Z" fill="#ffffff"/></svg>
+    </div>
+    <div class="tagline__inner">
+      <p class="tagline__text">
+        Une pratique <strong>exclusivement dédiée à l'orthodontie</strong>, avec des solutions pour chaque patient : <strong>enfants</strong>, <strong>adolescents</strong> et <strong>adultes</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT — Dr Chardon
+       ============================================ -->
+  <section class="section about" id="about">
+    <div class="section__inner">
+      <div class="about__grid">
+        <img src="https://images.pexels.com/photos/8376309/pexels-photo-8376309.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dr Sarah Chardon — Chirurgien-dentiste, orthodontie exclusive" class="about__photo" loading="lazy">
+        <div class="about__content">
+          <p class="section__label">Dr Sarah Chardon</p>
+          <h2 class="section__title">Parcours <em>& formation</em></h2>
+          <div class="about__text">
+            <p>
+              En tant que chirurgien-dentiste ayant choisi de se consacrer <strong>exclusivement à l'orthodontie</strong>, le Dr Chardon dispose d'une connaissance complète de la sphère bucco-dentaire appliquée à cette discipline.
+            </p>
+            <p>
+              Cette double compétence permet une prise en charge globale de chaque patient : alignement dentaire, équilibre fonctionnel, occlusion et esthétique du sourire.
+            </p>
+          </div>
+          <div class="about__quals">
+            <div class="about__qual">
+              <div class="about__qual-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 7 1-5 5 1.5 7L12 18l-6.5 3L7 14 2 9l7-1 3-6z"/></svg>
+              </div>
+              <div>
+                <h4>Chirurgien-dentiste diplômée</h4>
+                <p>Doctorat en chirurgie dentaire</p>
+              </div>
+            </div>
+            <div class="about__qual">
+              <div class="about__qual-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M9 14h6"/></svg>
+              </div>
+              <div>
+                <h4>DIU Pitié-Salpêtrière / Sorbonne</h4>
+                <p>2 480 heures de formation spécialisée</p>
+              </div>
+            </div>
+            <div class="about__qual">
+              <div class="about__qual-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-5"/></svg>
+              </div>
+              <div>
+                <h4>Pratique exclusive orthodontie</h4>
+                <p>100% dédiée depuis plus de 15 ans</p>
+              </div>
+            </div>
+            <div class="about__qual">
+              <div class="about__qual-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2z"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h3"/></svg>
+              </div>
+              <div>
+                <h4>Membre SFODF</h4>
+                <p>Société Française d'Orthopédie Dento-Faciale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       RESULTS — Interactive Before/After Sliders
+       ============================================ -->
+  <section class="section results" id="results">
+    <div class="section__inner">
+      <div class="section__header section__header--center">
+        <p class="section__label">Résultats</p>
+        <h2 class="section__title">Avant <em>/ Après</em></h2>
+        <p class="section__subtitle">Quelques exemples de résultats obtenus au cabinet (illustrations schématiques).</p>
+      </div>
+      <div class="results__grid">
+
+        <!-- Slider 1 -->
+        <div class="ba-slider">
+          <div class="ba-slider__wrapper">
+            <div class="ba-slider__before">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #2a2a42 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M30 80 Q40 30 55 50 Q60 55 65 40 Q75 25 85 45 Q90 50 100 35 Q110 20 115 45 Q120 55 130 40 Q140 25 150 50 Q155 55 165 45 Q175 30 180 80" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Inter, sans-serif" font-size="11">Encombrement dentaire</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Avant</span>
+            </div>
+            <div class="ba-slider__after">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #2a2a42 0%, #3a3a5a 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M30 65 Q50 35 65 40 Q75 42 85 38 Q95 35 100 35 Q105 35 115 38 Q125 42 135 40 Q150 35 180 65" stroke="rgba(255,81,73,0.5)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,81,73,0.45)" font-family="Inter, sans-serif" font-size="11">Alignement harmonieux</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Après</span>
+            </div>
+            <div class="ba-slider__handle">
+              <div class="ba-slider__handle-line"></div>
+              <div class="ba-slider__handle-circle">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M7 4L3 10L7 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 4L17 10L13 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="ba-slider__caption">Aligneurs invisibles — Adulte, 28 ans — 14 mois</p>
+        </div>
+
+        <!-- Slider 2 -->
+        <div class="ba-slider">
+          <div class="ba-slider__wrapper">
+            <div class="ba-slider__before">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #2a2a42 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M40 70 Q50 45 60 55 Q70 60 80 35 Q90 55 100 45 Q110 55 120 30 Q130 55 140 50 Q150 60 160 55 Q170 40 175 70" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Inter, sans-serif" font-size="11">Béance antérieure</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Avant</span>
+            </div>
+            <div class="ba-slider__after">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #2a2a42 0%, #3a3a5a 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M40 60 Q55 38 70 42 Q80 44 90 40 Q100 38 110 40 Q120 44 130 42 Q145 38 160 55 Q170 40 175 60" stroke="rgba(255,81,73,0.5)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,81,73,0.45)" font-family="Inter, sans-serif" font-size="11">Occlusion corrigée</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Après</span>
+            </div>
+            <div class="ba-slider__handle">
+              <div class="ba-slider__handle-line"></div>
+              <div class="ba-slider__handle-circle">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M7 4L3 10L7 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 4L17 10L13 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="ba-slider__caption">Bagues céramiques — Adolescente, 14 ans — 18 mois</p>
+        </div>
+
+        <!-- Slider 3 -->
+        <div class="ba-slider">
+          <div class="ba-slider__wrapper">
+            <div class="ba-slider__before">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #2a2a42 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M50 75 Q55 50 65 55 Q75 40 85 60 Q95 45 100 50 Q110 60 120 40 Q130 55 140 60 Q150 50 160 75" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Inter, sans-serif" font-size="11">Dents de lait / définitives</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Avant</span>
+            </div>
+            <div class="ba-slider__after">
+              <div class="ba-slider__img" style="background: linear-gradient(135deg, #2a2a42 0%, #3a3a5a 100%);">
+                <div class="ba-slider__teeth">
+                  <svg viewBox="0 0 200 120" fill="none"><path d="M50 60 Q60 40 70 44 Q80 46 90 42 Q100 40 110 42 Q120 46 130 44 Q140 40 160 60" stroke="rgba(255,81,73,0.5)" stroke-width="2" fill="none"/><text x="100" y="105" text-anchor="middle" fill="rgba(255,81,73,0.45)" font-family="Inter, sans-serif" font-size="11">Croissance guidée</text></svg>
+                </div>
+              </div>
+              <span class="ba-slider__label">Après</span>
+            </div>
+            <div class="ba-slider__handle">
+              <div class="ba-slider__handle-line"></div>
+              <div class="ba-slider__handle-circle">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M7 4L3 10L7 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 4L17 10L13 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="ba-slider__caption">Traitement interceptif — Enfant, 8 ans — 10 mois</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="section faq" id="faq">
+    <div class="section__inner">
+      <div class="section__header section__header--center">
+        <p class="section__label">Questions fréquentes</p>
+        <h2 class="section__title">FAQ</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__q">À quel âge faut-il consulter pour la première fois ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Il est recommandé de consulter un orthodontiste dès l'âge de 6-7 ans. À cet âge, il est possible de détecter certains problèmes de croissance des mâchoires et d'intervenir de manière précoce si nécessaire.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Combien de temps dure un traitement d'orthodontie ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>La durée varie selon la complexité du cas, généralement entre 12 et 24 mois. Lors de la consultation initiale, nous vous donnerons une estimation précise adaptée à votre situation.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Est-ce que le traitement est douloureux ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Les premiers jours suivant la pose ou un ajustement peuvent entraîner une légère gêne. Celle-ci est temporaire et bien gérée avec un simple antalgique. Les techniques modernes ont considérablement réduit l'inconfort.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Quels types d'appareils proposez-vous ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Nous proposons des aligneurs invisibles (gouttières transparentes), des bagues céramiques, l'orthodontie linguale (attaches sur la face interne des dents), ainsi que des traitements interceptifs pour les enfants.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Les adultes peuvent-ils bénéficier d'un traitement ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Il n'y a aucune limite d'âge pour un traitement orthodontique. De nombreuses solutions discrètes sont disponibles pour les adultes, comme les gouttières transparentes ou l'orthodontie linguale.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Quelle est la fréquence des rendez-vous ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Les rendez-vous de suivi ont lieu en moyenne toutes les 4 à 8 semaines, selon le type de traitement et son avancement. Chaque visite dure entre 15 et 30 minutes.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Comment entretenir son appareil ? <span class="faq__icon"></span></button>
+          <div class="faq__a"><p>Un brossage minutieux après chaque repas est essentiel. Pour les gouttières, il faut les retirer pour manger et les nettoyer régulièrement. Nous vous fournirons des conseils détaillés adaptés à votre appareil.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT
+       ============================================ -->
+  <section class="section contact" id="contact">
+    <div class="contact__wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C480,60 960,60 1440,0 L1440,0 L0,0 Z" fill="#f5f5f5"/></svg>
+    </div>
+    <div class="section__inner">
+      <div class="section__header section__header--center" style="margin-bottom:3.5rem;">
+        <p class="section__label" style="color:var(--accent);">Contact</p>
+        <h2 class="section__title" style="color:var(--white);">Prenez <em style="color:rgba(255,255,255,0.4);">rendez-vous</em></h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__col">
+          <h3>Cabinet</h3>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <p><strong>Adresse</strong>Quartier du Stade<br>92700 Colombes</p>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <p><strong>Téléphone</strong><a href="tel:+33145537812">01 45 53 78 12</a></p>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <p><strong>Email</strong><a href="mailto:contact@drchardon.fr">contact@drchardon.fr</a></p>
+          </div>
+        </div>
+        <div class="contact__col">
+          <h3>Horaires</h3>
+          <table class="contact__hours">
+            <tr><td>Lundi</td><td>09h00 – 19h00</td></tr>
+            <tr><td>Mardi</td><td>09h00 – 19h00</td></tr>
+            <tr><td>Mercredi</td><td>09h00 – 19h00</td></tr>
+            <tr><td>Jeudi</td><td>09h00 – 19h00</td></tr>
+            <tr><td>Vendredi</td><td>09h00 – 18h00</td></tr>
+            <tr><td>Samedi</td><td>Sur rendez-vous</td></tr>
+          </table>
+        </div>
+        <div class="contact__col">
+          <h3>Accès</h3>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <p><strong>Transports</strong>Gare de Colombes (Transilien J/L)<br>Bus : lignes à proximité<br>Parking disponible</p>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <p><strong>Quartier</strong>Le Stade, Colombes<br>Proche stade Yves-du-Manoir</p>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe
+            src="https://maps.google.com/maps?q=Stade+Yves+du+Manoir+Colombes+92700&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="250" style="border:0;"
+            allowfullscreen="" loading="lazy"
+            title="Cabinet Dr Chardon — Colombes">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <p>&copy; 2025 Dr Sarah Chardon — Chirurgien-dentiste — Tous droits réservés</p>
+  </footer>
+
+  <!-- ============================================
+       JS
+       ============================================ -->
+  <script>
+    // Navbar scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq__q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq__item.active').forEach(i => i.classList.remove('active'));
+        if (!wasActive) item.classList.add('active');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const offset = nav.offsetHeight || 0;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+      });
+    });
+
+    // Before/After interactive sliders
+    document.querySelectorAll('.ba-slider__wrapper').forEach(slider => {
+      const afterEl = slider.querySelector('.ba-slider__after');
+      const handle = slider.querySelector('.ba-slider__handle');
+      let dragging = false;
+
+      const setPos = (x) => {
+        const rect = slider.getBoundingClientRect();
+        let pct = Math.max(5, Math.min(95, ((x - rect.left) / rect.width) * 100));
+        afterEl.style.clipPath = 'inset(0 0 0 ' + pct + '%)';
+        handle.style.left = pct + '%';
+      };
+
+      slider.addEventListener('mousedown', e => { dragging = true; setPos(e.clientX); e.preventDefault(); });
+      document.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
+      document.addEventListener('mouseup', () => { dragging = false; });
+
+      slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
+      slider.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+      slider.addEventListener('touchend', () => { dragging = false; });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.treat-card, .about__qual, .ba-slider, .faq__item, .distance-card, .contact__col').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1) ' + (i % 5) * 0.08 + 's, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) ' + (i % 5) * 0.08 + 's';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

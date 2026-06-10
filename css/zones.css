@@ -1,0 +1,392 @@
+/* ============================================
+   ZONE PAGES — orthodontie-proche/
+   Uses design tokens from style.css
+   ============================================ */
+
+/* Hero */
+.zone-hero {
+  min-height: 45vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  background: var(--black);
+  color: var(--white);
+  padding-top: 6rem;
+}
+
+.zone-hero__bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,81,73,0.06) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(10,10,10,0.3) 0%, transparent 50%);
+}
+
+.zone-hero__content {
+  position: relative; z-index: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5rem) 2rem;
+}
+
+.zone-hero__breadcrumb {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.zone-hero__breadcrumb a {
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s ease;
+}
+
+.zone-hero__breadcrumb a:hover { color: var(--accent); }
+
+.zone-hero h1 {
+  font-family: var(--font);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.zone-hero h1 em {
+  font-style: normal; font-weight: 300;
+  color: rgba(255,255,255,0.5);
+}
+
+.zone-hero__subtitle {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255,255,255,0.55);
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* Zone Body */
+.zone-body {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+  background: var(--white);
+}
+
+.zone-body .container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.zone-body__grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: clamp(3rem, 5vw, 5rem);
+  align-items: start;
+}
+
+/* Main Content */
+.zone-content h2 {
+  font-family: var(--font);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 1.25rem;
+  margin-top: 3.5rem;
+}
+
+.zone-content h2:first-child { margin-top: 0; }
+
+.zone-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.zone-content p {
+  font-size: 0.92rem;
+  color: var(--gray-700);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.zone-content strong { color: var(--gray-900); }
+
+/* Cities Table */
+.zone-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.85rem;
+}
+
+.zone-table thead th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--black);
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--accent);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.zone-table tbody td {
+  padding: 0.65rem 1rem;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.zone-table tbody tr:hover {
+  background: var(--gray-100);
+}
+
+.zone-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* Map Embed */
+.zone-map {
+  margin: 2.5rem 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--gray-300);
+}
+
+.zone-map iframe,
+.zone-map #leafletMap {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  display: block;
+}
+
+/* Treatment Links */
+.zone-treatments {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.zone-treat-link {
+  display: flex; align-items: center; gap: 0.6rem;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  transition: all 0.3s var(--ease);
+  text-decoration: none;
+  color: var(--black);
+}
+
+.zone-treat-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  border-color: var(--accent);
+}
+
+.zone-treat-link__emoji {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.zone-treat-link__text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Sidebar */
+.zone-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.zone-sidebar__cta {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.zone-sidebar__cta h3 {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 0.75rem;
+}
+
+.zone-sidebar__cta p {
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.zone-sidebar__cta .btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 100%;
+  background: var(--accent); color: var(--white);
+  padding: 0.8rem 2rem; border-radius: 50px;
+  font-size: 0.85rem; font-weight: 600;
+  transition: all 0.3s var(--ease);
+  text-decoration: none;
+}
+
+.zone-sidebar__cta .btn:hover {
+  background: var(--accent-dark); transform: translateY(-1px);
+}
+
+.zone-sidebar__zones {
+  background: var(--gray-100);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.zone-sidebar__zones h4 {
+  font-size: 0.78rem; font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.zone-sidebar__zones ul {
+  list-style: none; padding: 0; margin: 0;
+}
+
+.zone-sidebar__zones li { margin-bottom: 0.4rem; }
+
+.zone-sidebar__zones a {
+  font-size: 0.82rem;
+  color: var(--gray-700);
+  transition: color 0.2s;
+}
+
+.zone-sidebar__zones a:hover { color: var(--accent); }
+
+.zone-sidebar__zones a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Hub — zone-hero alternate inner */
+.zone-hero__inner {
+  position: relative; z-index: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5rem) 2rem;
+}
+
+.zone-hero__title {
+  font-family: var(--font);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.zone-hero__title em {
+  font-style: normal; font-weight: 300;
+  color: rgba(255,255,255,0.5);
+}
+
+.zone-hero__sub {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255,255,255,0.55);
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* Hub — zones list */
+.zones-hub {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+
+.zones-hub__card {
+  display: flex; align-items: center; gap: 1.5rem;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  text-decoration: none; color: inherit;
+  transition: all 0.3s var(--ease);
+}
+
+.zones-hub__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+  border-color: var(--accent);
+}
+
+.zones-hub__icon {
+  width: 48px; height: 48px; flex-shrink: 0;
+  background: rgba(255,81,73,0.08);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+  transition: all 0.3s var(--ease);
+}
+
+.zones-hub__card:hover .zones-hub__icon {
+  background: var(--accent); color: var(--white);
+}
+
+.zones-hub__title {
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--black); margin-bottom: 0.35rem;
+}
+
+.zones-hub__cities {
+  font-size: 0.82rem; color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.zones-hub__arrow {
+  margin-left: auto; flex-shrink: 0;
+  font-size: 1.4rem; font-weight: 300;
+  color: var(--gray-300);
+  transition: all 0.3s var(--ease);
+}
+
+.zones-hub__card:hover .zones-hub__arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.zones-hub__cta {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2.5rem 2rem;
+  background: var(--gray-100);
+  border-radius: 16px;
+}
+
+.zones-hub__cta p {
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .zone-body__grid {
+    grid-template-columns: 1fr;
+  }
+  .zone-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .zone-treatments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .zone-treatments {
+    grid-template-columns: 1fr;
+  }
+}

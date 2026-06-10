@@ -1,0 +1,13 @@
+# Interdire le listage du répertoire
+Options -Indexes
+
+# Bloquer l'accès direct aux fichiers sauf les endpoints
+<Files "*">
+    Require all denied
+</Files>
+<Files "booking.php">
+    Require all granted
+</Files>
+<Files "contact.php">
+    Require all granted
+</Files>

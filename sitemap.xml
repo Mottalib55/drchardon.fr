@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- === FRENCH === -->
+
+  <!-- Accueil FR -->
+  <url>
+    <loc>https://drchardon.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Traitements FR -->
+  <url>
+    <loc>https://drchardon.fr/traitements/aligneurs-invisibles.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/aligneurs-invisibles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/clear-aligners.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/traitements/multibagues.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/multibagues.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/multi-bracket-braces.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/traitements/orthodontie-interceptive.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-interceptive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/interceptive-orthodontics.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/traitements/orthodontie-adolescent.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-adolescent.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/orthodontics-teenagers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/traitements/orthodontie-adulte.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-adulte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/orthodontics-adults.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Zones FR -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/hauts-de-seine-nord.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/hauts-de-seine-nord.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/hauts-de-seine-north.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/val-d-oise-sud.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/val-d-oise-sud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/val-d-oise-south.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/yvelines-est.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/yvelines-est.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/yvelines-east.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-ouest.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-ouest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/seine-saint-denis-ouest.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/seine-saint-denis-ouest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/seine-saint-denis-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- === ENGLISH === -->
+
+  <!-- Homepage EN -->
+  <url>
+    <loc>https://drchardon.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Treatments EN -->
+  <url>
+    <loc>https://drchardon.fr/en/treatments/clear-aligners.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/aligneurs-invisibles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/clear-aligners.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/treatments/multi-bracket-braces.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/multibagues.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/multi-bracket-braces.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/treatments/interceptive-orthodontics.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-interceptive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/interceptive-orthodontics.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/treatments/orthodontics-teenagers.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-adolescent.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/orthodontics-teenagers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/treatments/orthodontics-adults.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/traitements/orthodontie-adulte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/treatments/orthodontics-adults.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Zones EN -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/hauts-de-seine-north.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/hauts-de-seine-nord.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/hauts-de-seine-north.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/val-d-oise-south.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/val-d-oise-sud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/val-d-oise-south.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/yvelines-east.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/yvelines-est.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/yvelines-east.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-west.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-ouest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/seine-saint-denis-west.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/seine-saint-denis-ouest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/seine-saint-denis-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- === CITY PAGES FR === -->
+
+  <!-- Zone 1 — Hauts-de-Seine Nord (FR) -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/bois-colombes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bois-colombes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bois-colombes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/la-garenne-colombes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/la-garenne-colombes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/la-garenne-colombes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/asnieres-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/asnieres-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/asnieres-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/gennevilliers.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/gennevilliers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/gennevilliers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/courbevoie.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/courbevoie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/courbevoie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/clichy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/clichy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/clichy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/villeneuve-la-garenne.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/villeneuve-la-garenne.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/villeneuve-la-garenne.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/puteaux.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/puteaux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/puteaux.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/levallois-perret.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/levallois-perret.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/levallois-perret.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/nanterre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/nanterre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/nanterre.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/neuilly-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/neuilly-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/neuilly-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 2 — Val-d'Oise Sud (FR) -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/bezons.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bezons.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bezons.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/argenteuil.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/argenteuil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/argenteuil.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/cormeilles-en-parisis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/cormeilles-en-parisis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/cormeilles-en-parisis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/sannois.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/sannois.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/sannois.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/franconville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/franconville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/franconville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/ermont.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/ermont.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/ermont.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/enghien-les-bains.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/enghien-les-bains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/enghien-les-bains.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/saint-gratien.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-gratien.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-gratien.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/herblay-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/herblay-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/herblay-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/taverny.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/taverny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/taverny.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/montmorency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montmorency.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montmorency.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 3 — Yvelines Est (FR) -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/houilles.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/houilles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/houilles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/sartrouville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/sartrouville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/sartrouville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/carrieres-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/carrieres-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/carrieres-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/montesson.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montesson.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montesson.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/chatou.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/chatou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/chatou.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/rueil-malmaison.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/rueil-malmaison.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/rueil-malmaison.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/le-vesinet.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-vesinet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-vesinet.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/maisons-laffitte.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/maisons-laffitte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/maisons-laffitte.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/saint-germain-en-laye.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-germain-en-laye.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-germain-en-laye.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/poissy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/poissy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/poissy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 4 — Paris Ouest (FR) -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-17e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-17e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-17th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-8e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-8e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-8th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-9e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-9e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-9th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-16e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-16e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-16th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-18e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-18e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-18th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-1er.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-1er.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-1st.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-7e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-7e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-7th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-15e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-15e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-15th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 5 — Seine-Saint-Denis Ouest (FR) -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/l-ile-saint-denis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/l-ile-saint-denis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/l-ile-saint-denis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/saint-ouen-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-ouen-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-ouen-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/epinay-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/epinay-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/epinay-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/saint-denis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-denis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-denis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/la-courneuve.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/la-courneuve.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/la-courneuve.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/stains.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/stains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/stains.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/pierrefitte-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/pierrefitte-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/pierrefitte-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/villetaneuse.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/villetaneuse.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/villetaneuse.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === CITY PAGES EN === -->
+
+  <!-- Zone 1 — Northern Hauts-de-Seine (EN) -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/bois-colombes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bois-colombes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bois-colombes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/la-garenne-colombes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/la-garenne-colombes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/la-garenne-colombes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/asnieres-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/asnieres-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/asnieres-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/gennevilliers.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/gennevilliers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/gennevilliers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/courbevoie.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/courbevoie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/courbevoie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/clichy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/clichy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/clichy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/villeneuve-la-garenne.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/villeneuve-la-garenne.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/villeneuve-la-garenne.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/puteaux.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/puteaux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/puteaux.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/levallois-perret.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/levallois-perret.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/levallois-perret.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/nanterre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/nanterre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/nanterre.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/neuilly-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/neuilly-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/neuilly-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 2 — Southern Val-d'Oise (EN) -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/bezons.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bezons.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bezons.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/argenteuil.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/argenteuil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/argenteuil.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/cormeilles-en-parisis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/cormeilles-en-parisis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/cormeilles-en-parisis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/sannois.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/sannois.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/sannois.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/franconville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/franconville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/franconville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/ermont.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/ermont.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/ermont.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/enghien-les-bains.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/enghien-les-bains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/enghien-les-bains.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/saint-gratien.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-gratien.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-gratien.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/herblay-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/herblay-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/herblay-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/taverny.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/taverny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/taverny.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/montmorency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montmorency.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montmorency.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 3 — Eastern Yvelines (EN) -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/houilles.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/houilles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/houilles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/sartrouville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/sartrouville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/sartrouville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/carrieres-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/carrieres-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/carrieres-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/montesson.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montesson.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montesson.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/chatou.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/chatou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/chatou.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/rueil-malmaison.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/rueil-malmaison.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/rueil-malmaison.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/le-vesinet.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-vesinet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-vesinet.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/maisons-laffitte.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/maisons-laffitte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/maisons-laffitte.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/saint-germain-en-laye.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-germain-en-laye.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-germain-en-laye.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/poissy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/poissy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/poissy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 4 — Western Paris (EN) -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-17th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-17e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-17th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-8th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-8e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-8th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-9th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-9e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-9th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-16th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-16e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-16th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-18th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-18e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-18th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-1st.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-1er.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-1st.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-7th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-7e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-7th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/paris-15th.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-15e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-15th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone 5 — Western Seine-Saint-Denis (EN) -->
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/l-ile-saint-denis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/l-ile-saint-denis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/l-ile-saint-denis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/saint-ouen-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-ouen-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-ouen-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/epinay-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/epinay-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/epinay-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/saint-denis.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-denis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-denis.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/la-courneuve.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/la-courneuve.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/la-courneuve.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/stains.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/stains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/stains.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/pierrefitte-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/pierrefitte-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/pierrefitte-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/en/orthodontics-nearby/villetaneuse.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/villetaneuse.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/villetaneuse.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Zone hubs 6-11 FR -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/seine-saint-denis-est.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/seine-saint-denis-est.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/seine-saint-denis-east.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-centre-est.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-centre-est.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-center-east.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/boucle-de-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/boucle-de-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/boucle-de-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- === ZONE 6 — Hauts-de-Seine Centre-Sud === -->
+
+  <!-- Zone hub FR -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/hauts-de-seine-centre-sud.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/hauts-de-seine-centre-sud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/hauts-de-seine-center-south.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Zone 6 cities FR -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/suresnes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/suresnes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/suresnes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/saint-cloud.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/saint-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/saint-cloud.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/boulogne-billancourt.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/boulogne-billancourt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/boulogne-billancourt.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/garches.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/garches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/garches.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/issy-les-moulineaux.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/issy-les-moulineaux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/issy-les-moulineaux.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/meudon.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/meudon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/meudon.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/vanves.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/vanves.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/vanves.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/chaville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/chaville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/chaville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/ville-d-avray.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/ville-d-avray.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/ville-d-avray.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/clamart.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/clamart.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/clamart.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === ZONE 7 — Yvelines Centre === -->
+
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/yvelines-centre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/yvelines-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/yvelines-center.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/croissy-sur-seine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/croissy-sur-seine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/croissy-sur-seine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/le-pecq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-pecq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-pecq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/le-port-marly.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-port-marly.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-port-marly.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/louveciennes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/louveciennes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/louveciennes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/fourqueux.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/fourqueux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/fourqueux.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/mareil-marly.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/mareil-marly.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/mareil-marly.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/conflans-sainte-honorine.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/conflans-sainte-honorine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/conflans-sainte-honorine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/acheres.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/acheres.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/acheres.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === ZONE 8 — Val-d'Oise Centre === -->
+
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/val-d-oise-centre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/val-d-oise-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/val-d-oise-center.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/montigny-les-cormeilles.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montigny-les-cormeilles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montigny-les-cormeilles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/deuil-la-barre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/deuil-la-barre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/deuil-la-barre.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/eaubonne.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/eaubonne.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/eaubonne.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/soisy-sous-montmorency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/soisy-sous-montmorency.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/soisy-sous-montmorency.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/groslay.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/groslay.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/groslay.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/montmagny.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/montmagny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/montmagny.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/beauchamp.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/beauchamp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/beauchamp.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/sarcelles.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/sarcelles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/sarcelles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === ZONE 9 — Seine-Saint-Denis Est (FR) === -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/aubervilliers.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/aubervilliers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/aubervilliers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/pantin.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/pantin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/pantin.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/le-bourget.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-bourget.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-bourget.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/drancy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/drancy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/drancy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/bobigny.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bobigny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bobigny.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/dugny.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/dugny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/dugny.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/le-blanc-mesnil.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/le-blanc-mesnil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/le-blanc-mesnil.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/bondy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bondy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bondy.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === ZONE 10 — Paris Centre-Est (FR) === -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-2e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-2e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-2nd.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-3e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-3e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-3rd.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-4e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-4e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-4th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-5e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-5e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-5th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-6e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-6e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-6th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-10e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-10e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-10th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-11e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-11e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-11th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-14e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-14e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-14th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-19e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-19e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-19th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/paris-20e.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/paris-20e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/paris-20th.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- === ZONE 11 — Boucle de Seine (FR) === -->
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/bougival.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/bougival.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/bougival.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/la-celle-saint-cloud.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/la-celle-saint-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/la-celle-saint-cloud.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/vaucresson.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/vaucresson.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/vaucresson.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/marnes-la-coquette.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/marnes-la-coquette.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/marnes-la-coquette.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/marly-le-roi.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/marly-le-roi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/marly-le-roi.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drchardon.fr/orthodontie-proche/l-etang-la-ville.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drchardon.fr/orthodontie-proche/l-etang-la-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drchardon.fr/en/orthodontics-nearby/l-etang-la-ville.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
