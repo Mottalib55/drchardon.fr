@@ -529,6 +529,12 @@ ul { list-style: none; }
 }
 .ba-slider__before .ba-slider__label { left: 1rem; }
 .ba-slider__after .ba-slider__label { right: 1rem; }
+.ba-slider__placeholder {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.45);
+  letter-spacing: 0.03em; pointer-events: none;
+}
 .ba-slider__handle {
   position: absolute; top: 0; bottom: 0; left: 50%;
   width: 3px; transform: translateX(-50%);
