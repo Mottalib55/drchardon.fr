@@ -25,27 +25,31 @@
  <meta name="twitter:title" content="Dr Sarah Chardon — Exercice limité à l'orthodontie, Colombes (92)">
  <meta name="twitter:description" content="Chirurgien-dentiste, exercice limité à l'orthodontie à Colombes. Aligneurs invisibles, multibagues.">
 
- <!-- Favicon -->
+ <!-- Favicon & Manifest -->
  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+ <link rel="manifest" href="manifest.webmanifest">
 
  <!-- Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/fonts.css">
 
  <!-- Styles -->
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
  <link rel="stylesheet" href="css/style.css">
 
- <!-- Schema.org -->
+ <!-- Schema.org — Dentist (Local Business) -->
  <script type="application/ld+json">
  {
  "@context": "https://schema.org",
  "@type": "Dentist",
- "name": "Dr Sarah Chardon — Chirurgien-dentiste, exercice limité à l'orthodontie",
- "description": "Chirurgien-dentiste à Colombes (92), exercice limité à l'orthodontie",
+ "@id": "https://drchardon.fr/#cabinet",
+ "name": "Cabinet Dr Sarah Chardon — Orthodontie",
+ "description": "Chirurgien-dentiste à Colombes (92), exercice limité à l'orthodontie. Aligneurs invisibles, multibagues, orthodontie enfant, adolescent et adulte.",
  "url": "https://drchardon.fr",
  "email": "cabinet@drchardon.fr",
+ "image": "https://drchardon.fr/assets/dr-chardon.jpg",
+ "priceRange": "$$",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Carte bancaire, Chèque, Espèces",
  "address": {
  "@type": "PostalAddress",
  "addressLocality": "Colombes",
@@ -100,6 +104,29 @@
  {"@type": "MedicalProcedure", "name": "Orthodontie adolescent", "url": "https://drchardon.fr/traitements/orthodontie-adolescent"},
  {"@type": "MedicalProcedure", "name": "Orthodontie adulte", "url": "https://drchardon.fr/traitements/orthodontie-adulte"}
  ]
+ }
+ </script>
+ <!-- Schema.org — Person (E-E-A-T) -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://drchardon.fr/#dr-chardon",
+ "name": "Dr Sarah Chardon",
+ "jobTitle": "Chirurgien-dentiste, exercice limité à l'orthodontie",
+ "image": "https://drchardon.fr/assets/dr-chardon.jpg",
+ "url": "https://drchardon.fr",
+ "worksFor": {"@id": "https://drchardon.fr/#cabinet"},
+ "alumniOf": [
+ {"@type": "EducationalOrganization", "name": "Faculté de chirurgie dentaire de Clermont-Ferrand"},
+ {"@type": "EducationalOrganization", "name": "École Supérieure d'Orthodontie (ESO)"},
+ {"@type": "EducationalOrganization", "name": "Pitié-Salpêtrière — DIU ODCMF"}
+ ],
+ "hasCredential": [
+ {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Doctorat de chirurgie dentaire — Clermont-Ferrand (2021)"},
+ {"@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "Formation ESO — École Supérieure d'Orthodontie (2021-2024)"}
+ ],
+ "knowsAbout": ["Orthodontie", "Aligneurs invisibles", "Multibagues", "Orthodontie interceptive", "Orthodontie adulte"]
  }
  </script>
 </head>
@@ -734,6 +761,7 @@
  <li><a href="#faq">FAQ</a></li>
  <li><a href="#contact">Contact</a></li>
  <li><a href="javascript:void(0)" data-booking>Prendre rendez-vous</a></li>
+ <li><a href="mentions-legales">Mentions légales</a></li>
  </ul>
  </div>
  </div>

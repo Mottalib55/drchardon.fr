@@ -1,5 +1,17 @@
 RewriteEngine On
 
+# ============================================
+# HTTPS & WWW redirect
+# ============================================
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.drchardon\.fr$ [NC]
+RewriteRule ^ https://drchardon.fr%{REQUEST_URI} [R=301,L]
+
+# ============================================
+# Clean URLs — strip .html extension
+# ============================================
 # Redirect .html to clean URL (301) — except google verification file
 RewriteCond %{THE_REQUEST} \s/(.+)\.html[\s?] [NC]
 RewriteCond %{REQUEST_URI} !google
@@ -13,3 +25,99 @@ RewriteRule ^ - [L]
 # Serve .html file for clean URL
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L]
+
+# ============================================
+# Custom 404
+# ============================================
+ErrorDocument 404 /404.html
+
+# ============================================
+# Security Headers
+# ============================================
+<IfModule mod_headers.c>
+  # HSTS — force HTTPS for 1 year + subdomains
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+  # Prevent MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Clickjacking protection
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # XSS protection (legacy browsers)
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Referrer policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions policy
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self), payment=()"
+
+  # Remove server signature
+  Header always unset X-Powered-By
+  Header always unset Server
+</IfModule>
+
+# ============================================
+# GZIP Compression
+# ============================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/ld+json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE application/manifest+json
+</IfModule>
+
+# ============================================
+# Browser Caching
+# ============================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML — short cache (content may change)
+  ExpiresByType text/html "access plus 1 hour"
+
+  # CSS & JS — 1 month
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+
+  # Images — 1 year
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+
+  # Fonts — 1 year
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # Video — 1 month
+  ExpiresByType video/mp4 "access plus 1 month"
+
+  # Manifest
+  ExpiresByType application/manifest+json "access plus 1 week"
+</IfModule>
+
+# ============================================
+# Prevent directory listing
+# ============================================
+Options -Indexes
+
+# ============================================
+# Prevent access to hidden files
+# ============================================
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Allow .htaccess itself and .well-known
+RewriteRule ^\.well-known/ - [L]

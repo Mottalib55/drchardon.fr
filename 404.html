@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page introuvable — Dr Chardon, Orthodontie Colombes</title>
+ <meta name="robots" content="noindex, nofollow">
+ <meta name="theme-color" content="#0a0a0a">
+ <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+ <link rel="stylesheet" href="/css/fonts.css">
+ <link rel="stylesheet" href="/css/style.css">
+ <style>
+  .error-page {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   text-align: center;
+   padding: 2rem;
+   background: var(--black);
+   color: var(--white);
+  }
+  .error-page__code {
+   font-size: clamp(5rem, 15vw, 12rem);
+   font-weight: 900;
+   line-height: 1;
+   color: var(--accent);
+   margin-bottom: 0.5rem;
+  }
+  .error-page__title {
+   font-size: clamp(1.25rem, 3vw, 2rem);
+   font-weight: 600;
+   margin-bottom: 1rem;
+  }
+  .error-page__text {
+   font-size: 1rem;
+   color: var(--gray-500);
+   max-width: 480px;
+   margin-bottom: 2.5rem;
+   line-height: 1.7;
+  }
+  .error-page__links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.75rem;
+   justify-content: center;
+   margin-bottom: 3rem;
+  }
+  .error-page__link {
+   display: inline-block;
+   padding: 0.75rem 1.5rem;
+   background: var(--accent);
+   color: var(--white);
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: 600;
+   font-size: 0.95rem;
+   transition: background 0.2s;
+  }
+  .error-page__link:hover {
+   background: var(--accent-dark);
+  }
+  .error-page__link--ghost {
+   background: transparent;
+   border: 1px solid var(--gray-700);
+   color: var(--gray-300);
+  }
+  .error-page__link--ghost:hover {
+   background: rgba(255,255,255,0.05);
+   border-color: var(--gray-500);
+  }
+  .error-page__nav {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   justify-content: center;
+  }
+  .error-page__nav a {
+   color: var(--gray-500);
+   text-decoration: none;
+   font-size: 0.9rem;
+   transition: color 0.2s;
+  }
+  .error-page__nav a:hover {
+   color: var(--accent);
+  }
+ </style>
+</head>
+<body>
+ <main class="error-page">
+  <div class="error-page__code">404</div>
+  <h1 class="error-page__title">Page introuvable</h1>
+  <p class="error-page__text">
+   La page que vous recherchez n'existe pas ou a été déplacée.
+   Retrouvez nos traitements et informations ci-dessous.
+  </p>
+  <div class="error-page__links">
+   <a href="/" class="error-page__link">Retour à l'accueil</a>
+   <a href="/#contact" class="error-page__link error-page__link--ghost">Nous contacter</a>
+  </div>
+  <nav class="error-page__nav">
+   <a href="/traitements/aligneurs-invisibles">Aligneurs invisibles</a>
+   <a href="/traitements/multibagues">Multibagues</a>
+   <a href="/traitements/orthodontie-interceptive">Orthodontie interceptive</a>
+   <a href="/traitements/orthodontie-adolescent">Orthodontie adolescent</a>
+   <a href="/traitements/orthodontie-adulte">Orthodontie adulte</a>
+   <a href="/orthodontie-proche/">Villes proches</a>
+  </nav>
+ </main>
+</body>
+</html>
