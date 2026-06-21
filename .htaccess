@@ -35,8 +35,11 @@ ErrorDocument 404 /404.html
 # Security Headers
 # ============================================
 <IfModule mod_headers.c>
-  # HSTS — force HTTPS for 1 year + subdomains
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  # HSTS — force HTTPS for 2 years + subdomains
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+
+  # Content Security Policy
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.clarity.ms https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.clarity.ms https://*.tile.openstreetmap.org; frame-src 'self'; frame-ancestors 'self'"
 
   # Prevent MIME-type sniffing
   Header always set X-Content-Type-Options "nosniff"
